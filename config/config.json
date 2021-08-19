@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "sp-feedback-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/spFeedback/SpFeedbackApplicationCustomizer.js",
+          "manifest": "./src/extensions/spFeedback/SpFeedbackApplicationCustomizer.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SpFeedbackApplicationCustomizerStrings": "lib/extensions/spFeedback/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js"
+  }
+}
